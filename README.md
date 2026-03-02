@@ -1,6 +1,16 @@
 <div>
 <h1>README</h1>
 
+## Versión para proyecto SOAR4UEBA
+
+Esta versión del proyecto openc2-lycan-java es un fork del proyecto principal https://github.com/oasis-open/openc2-lycan-java para uso dentro del proyecto soar4ueba
+
+Actualmente los cambios realizados han sido:
+Actualizar a java 11
+Actualizar algunas dependencias
+Añadir .gitignore
+Modificar este fichero readme
+
 ## Lycan
 
 [![Build Status](https://travis-ci.org/oasis-open/openc2-lycan-java.svg)](https://travis-ci.org/oasis-open/openc2-lycan-java)
