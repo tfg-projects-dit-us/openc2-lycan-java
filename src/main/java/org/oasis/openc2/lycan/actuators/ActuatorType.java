@@ -27,7 +27,8 @@ package org.oasis.openc2.lycan.actuators;
  *
  */
  public enum ActuatorType {
-	 SLPF("slpf");								// Actuator specifiers defined in the Stateless Packet Filtering Profile
+	 SLPF("slpf"),						// Actuator specifiers defined in the Stateless Packet Filtering Profile
+	 THREAT_HUNTING("th");	//Actuator para el perfil Threat_hunting
 	 
 //	ENDPOINT("endpoint"),
 //	ENDPOINT_WORKSTATION("endpoint_workstation"),

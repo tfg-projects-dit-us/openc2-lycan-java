@@ -1,5 +1,8 @@
 package org.oasis.openc2.lycan.targets;
-
+/**
+ * Extensión para el perfil threat hunting
+ * 
+ */
 public class ThDatasource {
     private String name;
 

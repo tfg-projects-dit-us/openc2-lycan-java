@@ -39,8 +39,10 @@ public class Target {
 	private Properties properties;
 	@JsonUnwrapped
 	private URI uri;
-
+	// Incluído en la extensión para el perfil THREAT_HUNTING
 	private ThDatasource thDatasource;
+	private ThHunt thHunt;
+	private ThHuntflow thHuntflow;
 
 	public Target() {
 	}
@@ -122,9 +124,20 @@ public class Target {
 		return uri;
 	}
 
+	// --- PERFIL THREAT HUNTING ---
 	@JsonGetter("th:datasource")
 	public ThDatasource getThDatasource() {
 		return thDatasource;
+	}
+
+	@JsonGetter("th:hunt")
+	public ThHunt getThHunt() {
+		return thHunt;
+	}
+
+	@JsonGetter("th:huntflow")
+	public ThHuntflow getThHuntflow() {
+		return thHuntflow;
 	}
 
 	public Target setArtifact(Artifact artifact) {
@@ -219,6 +232,17 @@ public class Target {
 	public Target setUri(URI uri) {
 		this.uri = uri;
 		return this;
+	}
+
+	// --- PERFIL THREAT HUNTING ---
+	@JsonSetter("th:huntflow")
+	public void setThHuntflow(ThHuntflow thHuntflow) {
+		this.thHuntflow = thHuntflow;
+	}
+
+	@JsonSetter("th:hunt")
+	public void setThHunt(ThHunt thHunt) {
+		this.thHunt = thHunt;
 	}
 
 	@JsonSetter("th:datasource")
