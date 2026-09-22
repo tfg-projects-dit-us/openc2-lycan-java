@@ -6,10 +6,14 @@
 Esta versión del proyecto openc2-lycan-java es un fork del proyecto principal https://github.com/oasis-open/openc2-lycan-java para uso dentro del proyecto soar4ueba
 
 Actualmente los cambios realizados han sido:
-Actualizar a java 11
-Actualizar algunas dependencias
-Añadir .gitignore
-Modificar este fichero readme
+* Actualizar a java 11
+* Actualizar algunas dependencias
+* Añadir .gitignore
+* Extensión a los targets del perfil threat hunting: huntflow, hunt y datsource (falta verificación)
+* Regeneración de la documentación (mvn clean javadoc:javadoc)
+* Modificar este fichero readme
+
+Recordar que cuando se hagan cambios necesita reinstalación (mvn clean install), es necesario cambiar la versión para distinguirla claramente de la librería original
 
 ## Lycan
 
