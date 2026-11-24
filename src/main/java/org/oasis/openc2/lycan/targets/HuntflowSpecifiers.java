@@ -2,6 +2,8 @@ package org.oasis.openc2.lycan.targets;
 
 import java.util.List;
 
+import org.oasis.openc2.lycan.profiles.th.targets.ReturnType;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
